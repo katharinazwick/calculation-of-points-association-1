@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>database for DLRG Potsdam points</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+<div>
+    <h1>DLRG Wachdienst Punkte</h1>
+</div>
+
+<button id="toggleBtn" class="toggle-btn">☰</button>
+
+<!-- Änderung: Sidebar startet als unsichtbar -->
+<div id="sidebar" class="sidebar">
+    <div id="sidebarContent">
+        <a href="#" id="changeToPeople">Personen</a>
+        <a href="#" id="changeToEntry">Wachdienst</a>
+        <a href="#" id="changeToChronik">Chronik</a>
+        <a href="#" id="changeToCloth">Klamotten</a>
+    </div>
+</div>
+
+<input type="text" id="newOne" placeholder="vollen Namen einfügen">
+<button id="newOneButton">save</button>
+<button id="newEntry">Wachdienst hinzufügen</button>
+<p></p>
+
+<div id="container"></div>
+
+<!--PopUp-->
+<div class="popup-overlay" id="popupEntry">
+    <div class="popup">
+        <h3>neuen Eintrag einfügen</h3>
+        <input type="date" id="date" class="inputPopup">
+        <input type="text" id="nameInput" class="inputPopup" placeholder="Namen eingeben">
+        <div id="suggestions"></div>
+        <select id="clothSelection" class="inputPopup">
+            <option>hierKommtJS</option>
+        </select>
+        <div id="clothInput">
+            <select class="inputPopup">
+                <option>hier kommt kleidung über js</option>
+            </select>
+            <input type="number" class="inputPopup" placeholder="Punkte">
+        </div>
+        <div class="inputPopup">
+            <button id="closePopupEntry">schließen</button>
+            <button id="saveInputEntry">speichern</button>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="../frontend/src/index.js"></script>
+<script type="module" src="../frontend/src/openAndClosePopup.js"></script>
+<script type="module" src="../frontend/src/sidebarToggle.js"></script>
+
+<script type="module" src="src/nameFieldPopup.js"></script>
+
+</body>
+</html>

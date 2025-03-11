@@ -1,0 +1,16 @@
+{
+  "name": "DLRG-Potsdam-WdP",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "frontend/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "pg": "^8.13.3"
+  }
+}
