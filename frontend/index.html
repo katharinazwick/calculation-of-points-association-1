@@ -18,8 +18,8 @@
 <!-- Änderung: Sidebar startet als unsichtbar -->
 <div id="sidebar" class="sidebar">
     <div id="sidebarContent">
-        <a href="#" id="changeToPeople">Personen</a>
         <a href="#" id="changeToEntry">Wachdienst</a>
+        <a href="#" id="changeToPeople">Personen</a>
         <a href="#" id="changeToChronik">Chronik</a>
         <a href="#" id="changeToCloth">Klamotten</a>
     </div>
@@ -27,7 +27,6 @@
 
 <input type="text" id="newOne" placeholder="vollen Namen einfügen">
 <button id="newOneButton">save</button>
-<button id="newEntry">Wachdienst hinzufügen</button>
 <p></p>
 
 <div id="container"></div>
@@ -37,28 +36,29 @@
     <div class="popup">
         <h3>neuen Eintrag einfügen</h3>
         <input type="date" id="date" class="inputPopup">
-        <input type="text" id="nameInput" class="inputPopup" placeholder="Namen eingeben">
+        <input type="text" id="nameInput" class="inputPopup" placeholder="Namen eingeben und enter">
+        <select id="nameForOrder" class="inputPopup"></select>
         <div id="suggestions"></div>
         <select id="clothSelection" class="inputPopup">
-            <option>hierKommtJS</option>
         </select>
         <div id="clothInput">
-            <select class="inputPopup">
-                <option>hier kommt kleidung über js</option>
-            </select>
-            <input type="number" class="inputPopup" placeholder="Punkte">
+            <input type="text" id="clothTypInput" class="inputPopup" placeholder="Klamotte">
+            <input type="number" id="clothPointInput" class="inputPopup" placeholder="Punkte">
         </div>
         <div class="inputPopup">
             <button id="closePopupEntry">schließen</button>
             <button id="saveInputEntry">speichern</button>
+            <button id="saveInputOrder">speichern</button>
+            <button id="saveInputCloth">speichern</button>
         </div>
     </div>
 </div>
 
 <script type="module" src="../frontend/src/index.js"></script>
 <script type="module" src="../frontend/src/openAndClosePopup.js"></script>
-<script type="module" src="../frontend/src/sidebarToggle.js"></script>
-
+<script type="module" src="../../DLRG-Potsdam2/frontend/src/sidebarToggle.js"></script>
+<script type="module" src="../frontend/src/getDatasForCloth.js"></script>
+<script type="module" src="../frontend/src/getDatasForOrder.js"></script>
 <script type="module" src="src/nameFieldPopup.js"></script>
 
 </body>

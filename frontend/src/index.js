@@ -1,37 +1,33 @@
 import {entryTable} from "./createEntryTable.js";
 import {chronik} from "./createChronik.js";
 
-
-
-const entry = [{date: "30.01.2001", people: "anna, lena"}, {date: "22.01.2002", people: "tom, lisa, anna"}]
-entryTable(entry, "");
-
+entryTable( "Wachdienst hinzufügen");
+//chronik();
 const entryButton = document.getElementById("changeToEntry");
 const peopleButton = document.getElementById("changeToPeople");
 const chronikButton = document.getElementById("changeToChronik");
 const clothButton = document.getElementById("changeToCloth");
 
 entryButton.addEventListener("click", function() {
-    entryTable("");
+    entryTable("Wachdienst hinzufügen");
     sidebar.style.display ="none";
 })
 
 
 peopleButton.addEventListener("click", function() {
-    entryTable("Kauforder")
+    entryTable( "Kauforder")
     sidebar.style.display ="none";
 })
 
 
 
 chronikButton.addEventListener("click", function() {
-    chronik(data);
+    chronik();
     sidebar.style.display ="none";
 })
 
-const value = [{cloth:"Tshirt", points: 5}]
 clothButton.addEventListener("click", function() {
-    entryTable("Kleidung hinzufügen")
+    entryTable( "Kleidung hinzufügen")
     sidebar.style.display ="none";
 
 })

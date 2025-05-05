@@ -1,28 +1,17 @@
+aktuell: hearders auf englisch
 
-mit doppelklick auf person öffnet tabelle
-datum aktion        punkt
-        wachdienst  +1
-        kauf von    -5
 
-fenster für kauforder
-person angeben
-gewolltest produkt 8aus datenbank tshirt pulli9
 
-datenbank
-art   punkte
-thsirt 5
-pulli  7
+            Ausgabe     Eingabe                 bearbeiten      löschen      filter          sortieren
+Personen:      sortieren
+Chronik:        löschen, filtern, punktzahl verkehrtherum
+chronik geht dann woanders hin dann nicht mehr
+Kauforder: kontrolle mit count um nciht ins minus zu gehen
+Wachdienst: Datum einmal?
 
-eintrag kaufendes produkt hinzufügen
+mehr typs als wachdienst?
 
-namen aktuell mehrfach eintragbar
+Kleidung bearbeiten => wenn sich die Punktzahl später ändert beachtet man dann das datum und bekommt der dann quasi ne neue ID
 
-//eintrag in personen bank => check
-//einrag in wachdinestbank => nein (beachte nach datum sortieren)
-//punkte erhöhen => nein
-//chronik (erstmal nach wachdienst aktion nein) später inkl. kauforder und datum
 
-//eintrag in kauforde => nein (fronend so halb / eintrag muss noch mit punkten vergleichen werden)
-//eintrag in klamoen order nein
 
-//personen nahc punkte sortieren
