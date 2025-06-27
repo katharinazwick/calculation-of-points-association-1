@@ -1,6 +1,5 @@
 import {openPopupEntry} from "./openAndClosePopup.js";
 import {nameField} from "./nameFieldPopup.js";
-import {addDoubleClickEvent} from "./upgrateAndDelete.js";
 
 export async function entryTable( char) {
     const container = document.getElementById("container");
@@ -72,6 +71,5 @@ let temp;
     })
 
     container.append(table);
-    setTimeout(addDoubleClickEvent (temp), 100);
 }
 

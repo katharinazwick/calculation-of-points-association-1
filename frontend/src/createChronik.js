@@ -1,5 +1,4 @@
 import {peopleSelect} from "./createClothSelect.js";
-import {addDoubleClickEvent} from "./upgrateAndDelete.js";
 
 export async function chronik() {
     const container = document.getElementById("container");
